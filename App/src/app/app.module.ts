@@ -24,7 +24,9 @@ import {AngularFirestoreModule} from 'angularfire2/firestore';
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,
+  imports: [BrowserModule, IonicModule.forRoot({
+    mode: 'ios'
+ }), AppRoutingModule,
      CardModule,
      AngularFireModule.initializeApp(environment.firebaseConfig),
      AngularFirestoreModule],

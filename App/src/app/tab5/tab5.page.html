@@ -1,7 +1,17 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>Tab5</ion-title>
-  </ion-toolbar>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-buttons slot="end">
+            <ion-button [routerLink]="'/perfil/'" routerDirection="forward">
+                <ion-icon name="contact" size="large"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+        <ion-title>
+            Tab5
+        </ion-title>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
