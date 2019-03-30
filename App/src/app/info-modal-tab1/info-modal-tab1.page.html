@@ -19,9 +19,6 @@
         <ion-item *ngIf="parametros">
             <ion-input required type="number" placeholder="Nivel de violencia" [(ngModel)]="parametros.nivelViolencia"></ion-input>
         </ion-item>
-        <ion-item>
-            <ion-input type="text" placeholder="Materia" [(ngModel)]="parametros.materia"></ion-input>
-        </ion-item>
     </ion-list>
     <ion-button expand="full" (click)="saveParam()">Save</ion-button>
 
