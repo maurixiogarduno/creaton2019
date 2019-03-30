@@ -14,11 +14,9 @@ export class InfoModalTab1Page implements OnInit {
   parametros: ParametrosInterface = {
     task2: '',
     priority: 0,
-    campo1P: '',
-    campo2P: '',
-    campo3P: '',
+    campo1P: ''
   };
-  
+
   parametroId = null;
 
   constructor(private route: ActivatedRoute, private nav: NavController, 

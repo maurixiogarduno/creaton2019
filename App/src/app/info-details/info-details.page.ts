@@ -63,7 +63,7 @@ export class InfoDetailsPage implements OnInit {
     }
   }
 
-  async onRemoveTodo(idTodo: string) {
+  async onRemoveTodo(idTodo:string) {
     this.infoService.removeTodo(idTodo);
   }
 

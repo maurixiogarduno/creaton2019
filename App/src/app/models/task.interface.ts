@@ -16,6 +16,4 @@ export interface ParametrosInterface {
     priority: number;
     //mas parametros
     campo1P: string;
-    campo2P: string;
-    campo3P: string;
 };

@@ -3,13 +3,11 @@
         <ion-buttons slot="start">
             <ion-back-button text="Regresar" defaultHref="/app/user/tabs/tab2"></ion-back-button>
         </ion-buttons>
-        <ion-title>infoModalTab1</ion-title>
+        <ion-title>Formulario</ion-title>
     </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-
-    <h1>InfoTab1</h1>
 
 
     <ion-list lines="full">
@@ -21,12 +19,6 @@
         </ion-item>
         <ion-item>
             <ion-input type="text" placeholder="Nuevo campo" [(ngModel)]="parametros.campo1P"></ion-input>
-        </ion-item>
-        <ion-item>
-            <ion-input type="text" placeholder="Nuevo campo 2" [(ngModel)]="parametros.campo2P"></ion-input>
-        </ion-item>
-        <ion-item>
-            <ion-input type="text" placeholder="Nuevo campo 3" [(ngModel)]="parametros.campo3P"></ion-input>
         </ion-item>
     </ion-list>
     <ion-button expand="full" (click)="saveParam()">Save</ion-button>
