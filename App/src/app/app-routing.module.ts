@@ -11,7 +11,9 @@ const routes: Routes = [
   { path: 'details/:id', loadChildren: './info-details/info-details.module#InfoDetailsPageModule' },
   { path: 'details', loadChildren: './info-details/info-details.module#InfoDetailsPageModule'},
   { path: 'tab4', loadChildren: './tab4/tab4.module#Tab4PageModule' },
-  { path: 'tab5', loadChildren: './tab5/tab5.module#Tab5PageModule' }
+  { path: 'tab5', loadChildren: './tab5/tab5.module#Tab5PageModule' },
+  { path: 'infomodaltab1', loadChildren: './info-modal-tab1/info-modal-tab1.module#InfoModalTab1PageModule' },
+  { path: 'infomodaltab1/:id', loadChildren: './info-modal-tab1/info-modal-tab1.module#InfoModalTab1PageModule' }
 ];
 @NgModule({
   imports: [

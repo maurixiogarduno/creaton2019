@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { BarcodeScanner, BarcodeScannerOptions } from '@ionic-native/barcode-scanner/ngx';
+import { ParametrosInterface } from '../models/task.interface';
+import { InfoService } from '../services/info.service';
 
 @Component({
   selector: 'app-tab2',
@@ -9,7 +10,14 @@ import { BarcodeScanner, BarcodeScannerOptions } from '@ionic-native/barcode-sca
 export class Tab2Page {
 
 
-  constructor(private barcodeScanner: BarcodeScanner) {}
+  params: ParametrosInterface[];
+
+  constructor(private infoService: InfoService) {}
+
+  
+  ngOnInit() {
+    this.infoService.getParams().subscribe(res => this.params = res);
+  }
 
 
 }

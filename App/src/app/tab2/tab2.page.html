@@ -14,52 +14,41 @@
     </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content padding>
+
+    <ion-list>
+        <ng-container *ngIf="!params || params.length == 0">
+            <div *ngFor="let n of [0,1,2]" padding>
+                <ion-skeleton-text></ion-skeleton-text>
+                <p>
+                    <ion-skeleton-text class="text-skeleton"></ion-skeleton-text>
+                </p>
+            </div>
+        </ng-container>
+        <ion-item-sliding *ngFor="let param of params">
+            <ion-item lines="inset" button [routerLink]="['/infomodaltab1', param.id]">
+                <ion-label>
+                    {{ param.task2 }}
+                </ion-label>
+                <ion-note slot="end" color="primary">{{ param.priority }}</ion-note>
+            </ion-item>
+
+            <ion-item-options side="end">
+                <ion-item-option color="secondary">
+                    Check
+                    <ion-icon name="checkmark" slot="end"></ion-icon>
+                </ion-item-option>
+            </ion-item-options>
+        </ion-item-sliding>
+    </ion-list>
+
+
+
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+        <ion-fab-button routerLink="/infomodaltab1" routerDirection="forward">
+            <ion-icon name="add"></ion-icon>
+        </ion-fab-button>
+    </ion-fab>
 
 
 </ion-content>
-
-<!-- <ion-footer class="animated fadeInUp" color="light" mode="ios">
-    <ion-row>
-        <ion-col size="4">
-            <ion-button mode="ios" color="light" expand="block" (click)="oneButton()">1</ion-button>
-        </ion-col>
-        <ion-col size="4">
-            <ion-button mode="ios" color="light" expand="block" (click)="twoButton()">2</ion-button>
-        </ion-col>
-        <ion-col size="4">
-            <ion-button mode="ios" color="light" expand="block" (click)="threeButton()">3</ion-button>
-        </ion-col>
-        <ion-col size="4">
-            <ion-button mode="ios" color="light" expand="block" (click)="fourButton()">4</ion-button>
-        </ion-col>
-        <ion-col size="4">
-            <ion-button mode="ios" color="light" expand="block" (click)="fiveButton()">5</ion-button>
-        </ion-col>
-        <ion-col size="4">
-            <ion-button mode="ios" color="light" expand="block" (click)="sixButton()">6</ion-button>
-        </ion-col>
-        <ion-col size="4">
-            <ion-button mode="ios" color="light" expand="block" (click)="sevenButton()">7</ion-button>
-        </ion-col>
-        <ion-col size="4">
-            <ion-button mode="ios" color="light" expand="block" (click)="eightButton()">8</ion-button>
-        </ion-col>
-        <ion-col size="4">
-            <ion-button mode="ios" color="light" expand="block" (click)="nineButton()">9</ion-button>
-        </ion-col>
-        <ion-col size="4">
-            <ion-button mode="ios" color="secondary" expand="block" (click)="scanCode()">
-                <ion-icon name="barcode"></ion-icon>
-            </ion-button>
-        </ion-col>
-        <ion-col size="4">
-            <ion-button mode="ios" color="light" expand="block" (click)="zeroButton()">0</ion-button>
-        </ion-col>
-        <ion-col size="4">
-            <ion-button mode="ios" color="danger" expand="block" (click)="cleanButton()">
-                <ion-icon name="close"></ion-icon>
-            </ion-button>
-        </ion-col>
-    </ion-row>
-</ion-footer> -->

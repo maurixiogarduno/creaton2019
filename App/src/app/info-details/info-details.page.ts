@@ -13,10 +13,14 @@ export class InfoDetailsPage implements OnInit {
 
   todo: TaskI = {
     task: '',
-    priority: 0
+    priority: 0,
+    //Nombres de los campos segun la interface
+    campo1: '',
+    campo2: '',
+    campo3: ''
   };
 
-  todoId= null;
+  todoId = null;
 
   constructor(private route: ActivatedRoute, private nav: NavController, 
     private infoService: InfoService, private loadingController: LoadingController) { }
@@ -59,7 +63,7 @@ export class InfoDetailsPage implements OnInit {
     }
   }
 
-  async onRemoveTodo(idTodo:string) {
+  async onRemoveTodo(idTodo: string) {
     this.infoService.removeTodo(idTodo);
   }
 
