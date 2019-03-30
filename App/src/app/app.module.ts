@@ -20,6 +20,9 @@ import { AngularFireModule } from 'angularfire2';
 import { environment } from '../environments/environment';
 import {AngularFirestoreModule} from 'angularfire2/firestore';
 
+//AngularMaps
+import { AgmCoreModule } from '@agm/core';
+
 
 @NgModule({
   declarations: [AppComponent],
@@ -29,7 +32,11 @@ import {AngularFirestoreModule} from 'angularfire2/firestore';
  }), AppRoutingModule,
      CardModule,
      AngularFireModule.initializeApp(environment.firebaseConfig),
-     AngularFirestoreModule],
+     AngularFirestoreModule,
+     AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyD8565_fd7mPzTNUaxnD7GPDNzdDhUQ7tQ'
+    })
+    ],
   providers: [
     StatusBar,
     SplashScreen,

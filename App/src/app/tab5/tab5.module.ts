@@ -7,6 +7,8 @@ import { IonicModule } from '@ionic/angular';
 
 import { Tab5Page } from './tab5.page';
 
+import { AgmCoreModule } from '@agm/core';
+
 const routes: Routes = [
   {
     path: '',
@@ -19,7 +21,10 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyD8565_fd7mPzTNUaxnD7GPDNzdDhUQ7tQ'
+    })
   ],
   declarations: [Tab5Page]
 })
