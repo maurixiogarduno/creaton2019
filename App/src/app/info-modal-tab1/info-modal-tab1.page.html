@@ -10,15 +10,17 @@
 <ion-content padding>
 
 
+
+
     <ion-list lines="full">
         <ion-item *ngIf="parametros">
-            <ion-input required type="text" placeholder="Task" [(ngModel)]="parametros.task2"></ion-input>
+            <ion-input required type="text" placeholder="Nombre" [(ngModel)]="parametros.nombre"></ion-input>
         </ion-item>
         <ion-item *ngIf="parametros">
-            <ion-input required type="number" placeholder="Priority" [(ngModel)]="parametros.priority"></ion-input>
+            <ion-input required type="number" placeholder="Nivel de violencia" [(ngModel)]="parametros.nivelViolencia"></ion-input>
         </ion-item>
         <ion-item>
-            <ion-input type="text" placeholder="Nuevo campo" [(ngModel)]="parametros.campo1P"></ion-input>
+            <ion-input type="text" placeholder="Materia" [(ngModel)]="parametros.materia"></ion-input>
         </ion-item>
     </ion-list>
     <ion-button expand="full" (click)="saveParam()">Save</ion-button>
@@ -27,5 +29,113 @@
             <ion-icon name="trash"></ion-icon>
         </ion-fab-button>
     </ion-fab>
+
+    <ion-list>
+        <ion-item>
+            <ion-checkbox color="warning"></ion-checkbox>
+            <ion-label>Bromas hirientes</ion-label>
+        </ion-item>
+        <ion-item>
+            <ion-checkbox color="warning"></ion-checkbox>
+            <ion-label>Chantajear</ion-label>
+        </ion-item>
+        <ion-item>
+            <ion-checkbox color="warning"></ion-checkbox>
+            <ion-label>Mentir, engañar</ion-label>
+        </ion-item>
+        <ion-item>
+            <ion-checkbox color="warning"></ion-checkbox>
+            <ion-label>Ignorar, ley de hielo</ion-label>
+        </ion-item>
+        <ion-item>
+            <ion-checkbox color="warning"></ion-checkbox>
+            <ion-label>Celar</ion-label>
+        </ion-item>
+        <ion-item>
+            <ion-checkbox color="warning"></ion-checkbox>
+            <ion-label>Culpabilizar</ion-label>
+        </ion-item>
+        <ion-item>
+            <ion-checkbox color="warning"></ion-checkbox>
+            <ion-label>Descalificar</ion-label>
+        </ion-item>
+        <ion-item>
+            <ion-checkbox color="warning"></ion-checkbox>
+            <ion-label>Ridiculizar, ofender</ion-label>
+        </ion-item>
+        <ion-item>
+            <ion-checkbox color="warning"></ion-checkbox>
+            <ion-label>Humillar en público</ion-label>
+        </ion-item>
+        <ion-item>
+            <ion-checkbox color="warning"></ion-checkbox>
+            <ion-label>Intimidar, amenazar</ion-label>
+        </ion-item>
+        <ion-item>
+            <ion-checkbox color="danger"></ion-checkbox>
+            <ion-label>Controlar, prohibir</ion-label>
+        </ion-item>
+        <ion-item>
+            <ion-checkbox color="danger"></ion-checkbox>
+            <ion-label>Destruir artículos personales</ion-label>
+        </ion-item>
+        <ion-item>
+            <ion-checkbox color="danger"></ion-checkbox>
+            <ion-label>Manosear</ion-label>
+        </ion-item>
+        <ion-item>
+            <ion-checkbox color="danger"></ion-checkbox>
+            <ion-label>Caricias agresivas</ion-label>
+        </ion-item>
+        <ion-item>
+            <ion-checkbox color="danger"></ion-checkbox>
+            <ion-label>Golpear "jugando"</ion-label>
+        </ion-item>
+        <ion-item>
+            <ion-checkbox color="danger"></ion-checkbox>
+            <ion-label>Pellizcar, arañar</ion-label>
+        </ion-item>
+        <ion-item>
+            <ion-checkbox color="danger"></ion-checkbox>
+            <ion-label>Empujar, jalonear</ion-label>
+        </ion-item>
+        <ion-item>
+            <ion-checkbox color="danger"></ion-checkbox>
+            <ion-label>Cachetear</ion-label>
+        </ion-item>
+        <ion-item>
+            <ion-checkbox color="danger"></ion-checkbox>
+            <ion-label>Patear</ion-label>
+        </ion-item>
+        <ion-item>
+            <ion-checkbox color="danger"></ion-checkbox>
+            <ion-label>Encerrar, aislar</ion-label>
+        </ion-item>
+        <ion-item>
+            <ion-checkbox color="primary"></ion-checkbox>
+            <ion-label>Amenazar con objetos o armas</ion-label>
+        </ion-item>
+        <ion-item>
+            <ion-checkbox color="primary"></ion-checkbox>
+            <ion-label>Amenazer de muerte</ion-label>
+        </ion-item>
+        <ion-item>
+            <ion-checkbox color="primary"></ion-checkbox>
+            <ion-label>Forzar a una relación sexual</ion-label>
+        </ion-item>
+        <ion-item>
+            <ion-checkbox color="primary"></ion-checkbox>
+            <ion-label>Violar</ion-label>
+        </ion-item>
+        <ion-item>
+            <ion-checkbox color="primary"></ion-checkbox>
+            <ion-label>Mutilar</ion-label>
+        </ion-item>
+        <ion-item>
+            <ion-checkbox color="primary"></ion-checkbox>
+            <ion-label>Asesinar</ion-label>
+        </ion-item>
+
+    </ion-list>
 
 </ion-content>

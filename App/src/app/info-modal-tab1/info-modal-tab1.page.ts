@@ -12,9 +12,14 @@ import { NavController, LoadingController } from '@ionic/angular';
 export class InfoModalTab1Page implements OnInit {
 
   parametros: ParametrosInterface = {
-    task2: '',
-    priority: 0,
-    campo1P: ''
+    // task2: '',
+    // priority: 0,
+    // campo1P: '',
+    
+    //nuevos campos
+    nombre: '',
+    nivelViolencia: 0,
+    materia: '',
   };
 
   parametroId = null;

@@ -16,33 +16,35 @@
 
 <ion-content padding>
 
-    <ion-list>
-        <ng-container *ngIf="!params || params.length == 0">
-            <div *ngFor="let n of [0,1,2]" padding>
-                <ion-skeleton-text></ion-skeleton-text>
-                <p>
-                    <ion-skeleton-text class="text-skeleton"></ion-skeleton-text>
-                </p>
-            </div>
-        </ng-container>
-        <ion-item-sliding *ngFor="let param of params">
-            <ion-item lines="inset" button [routerLink]="['/infomodaltab1', param.id]">
-                <ion-label>
-                    {{ param.campo1P }}
-                </ion-label>
-                <ion-note slot="end" color="primary">{{ param.priority }}</ion-note>
-            </ion-item>
+    <!-- CARD -->
 
-            <ion-item-options side="end">
-                <ion-item-option color="secondary">
-                    Check
-                    <ion-icon name="checkmark" slot="end"></ion-icon>
-                </ion-item-option>
-            </ion-item-options>
-        </ion-item-sliding>
-    </ion-list>
+    <ion-card mode="ios" *ngFor="let param of params" button [routerLink]="['/infomodaltab1', param.id]">
 
+        <ion-grid>
+            <ion-row>
+                <ion-col size="3">
+                    <ion-avatar>
+                        <img src="../../assets/img/user.png">
+                    </ion-avatar>
+                </ion-col>
+                <ion-col size="5">
+                    <div text-start>
+                        <p style="font-weight: bold; font-size: 18px; color: black;">{{ param.nombre }}</p>
+                        <p style="font-weight: bold; font-size: 18px; color: black;">Nivel de violencia</p>
+                    </div>
+                </ion-col>
+                <ion-col size="4">
+                    <div text-end>
+                        <p style="font-weight: bold; font-size: 18px; color: rgb(2, 24, 124);">Profesor</p>
+                        <p style="color: red">Nivel: Alto</p>
+                        <ion-progress-bar color="tertiary" value="0.7"></ion-progress-bar>
+                    </div>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </ion-card>
 
+    <!--  -->
 
     <ion-fab vertical="bottom" horizontal="end" slot="fixed">
         <ion-fab-button routerLink="/infomodaltab1" routerDirection="forward">

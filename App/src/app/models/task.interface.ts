@@ -12,8 +12,8 @@ export interface TaskI {
 
 export interface ParametrosInterface {
     id?: string;
-    task2: string;
-    priority: number;
+    nombre: string;
+    nivelViolencia: number;
     //mas parametros
-    campo1P: string;
+    materia: string;
 };
