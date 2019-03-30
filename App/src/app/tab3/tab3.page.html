@@ -14,9 +14,54 @@
     </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content padding>
 
-    <h1>Formulario</h1>
+    <ion-list>
+
+        <ion-item>
+            <ion-label position="stacked">Nombre</ion-label>
+            <ion-input></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="stacked">Apellido</ion-label>
+            <ion-input></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="stacked" placeholder="Preparatoria">Escolaridad</ion-label>
+            <ion-input></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="stacked" placeholder="Preparatoria">Estado Civil</ion-label>
+            <ion-input></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="stacked">Direccion</ion-label>
+            <ion-input></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="stacked">Edad actual</ion-label>
+            <ion-input></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="stacked">Edad cuando ocurrio en suceso</ion-label>
+            <ion-input></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label position="stacked">Descripcion</ion-label>
+            <ion-textarea placeholder="Enter more information here..."></ion-textarea>
+        </ion-item>
+        <br>
+        <ion-item>
+            <ion-label position="stacked">Consecuencias físicas de la violencia</ion-label>
+            <ion-input placeholder="Moretones, rasguños.."></ion-input>
+        </ion-item>
+
+
+
+    </ion-list>
+
+    <!-- <h1>Formulario</h1>
 
     <ion-list>
         <ng-container *ngIf="!todos || todos.length == 0">
@@ -47,6 +92,6 @@
         <ion-fab-button routerLink="/details" routerDirection="forward">
             <ion-icon name="add"></ion-icon>
         </ion-fab-button>
-    </ion-fab>
+    </ion-fab> -->
 
 </ion-content>
