@@ -10,7 +10,8 @@ const routes: Routes = [
   { path: 'perfil', loadChildren: './perfil/perfil.module#PerfilPageModule' },
   { path: 'details/:id', loadChildren: './info-details/info-details.module#InfoDetailsPageModule' },
   { path: 'details', loadChildren: './info-details/info-details.module#InfoDetailsPageModule'},
-  { path: 'tab4', loadChildren: './tab4/tab4.module#Tab4PageModule' }
+  { path: 'tab4', loadChildren: './tab4/tab4.module#Tab4PageModule' },
+  { path: 'tab5', loadChildren: './tab5/tab5.module#Tab5PageModule' }
 ];
 @NgModule({
   imports: [
