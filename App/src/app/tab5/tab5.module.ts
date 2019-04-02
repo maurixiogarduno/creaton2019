@@ -23,7 +23,7 @@ const routes: Routes = [
     IonicModule,
     RouterModule.forChild(routes),
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyD8565_fd7mPzTNUaxnD7GPDNzdDhUQ7tQ'
+      apiKey: ''
     })
   ],
   declarations: [Tab5Page]
